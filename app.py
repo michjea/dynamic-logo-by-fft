@@ -32,7 +32,6 @@ from flask_cors import CORS
 
 
 thread = None
-global gif
 gif: Gif = None
 is_startup = True
 
