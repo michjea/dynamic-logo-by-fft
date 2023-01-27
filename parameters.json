@@ -1,0 +1,82 @@
+{
+    "_comment" : "Please read the user documentation for better understanding of the settings :)",
+    "general" :
+    {
+        "_comment" : "General settings",
+        "gif_name" : "auto",
+        "fps" : 8,
+        "duration" : 15,
+        "color_mode" : true,
+        "show_magnitude" : true
+    },
+    "noise":
+    {
+        "_comment" : "Noise settings",
+        "mu_b_channel" : [0.0, 0.0],
+        "mu_g_channel" : [0.0, 0.0],
+        "mu_r_channel" : [0.0, 0.0],
+        "sigma_b_channel" : [0.0, 1.0],
+        "sigma_g_channel" : [0.0, 1.0],
+        "sigma_r_channel" : [0.0, 1.0]
+    },
+    "white_ellipse":
+    {
+        "_comment" : "White ellipse animation settings",
+        "x_axis_length" : [3, 50],
+        "y_axis_length" : [3, 50],
+        "stroke_thickness" : [5, 15],
+        "x_position" : [25, 75],
+        "y_position" : [25, 75],
+        "step" : 0.05,
+        "iterations" : [3, 5]
+    },
+    "white_ellipse_full":
+    {
+        "_comment" : "White ellipse (full) animation settings",
+        "x_axis_length" : [3, 50],
+        "y_axis_length" : [3, 50],
+        "stroke_thickness" : [-1, -1],
+        "x_position" : [25, 75],
+        "y_position" : [25, 75],
+        "step" : 0.05,
+        "iterations" : [3, 5]
+    },
+    "black_ellipse":
+    {
+        "_comment" : "Black ellipse animation settings",
+        "x_axis_length" : [3, 30],
+        "y_axis_length" : [3, 30],
+        "stroke_thickness" : [10, 25],
+        "x_position" : [25, 75],
+        "y_position" : [25, 75],
+        "step" : 0.05,
+        "iterations" : [3,5]
+    },
+    "black_ellipse_full":
+    {
+        "_comment" : "Black ellipse (full) animation settings",
+        "x_axis_length" : [3, 30],
+        "y_axis_length" : [3, 30],
+        "stroke_thickness" : [-1, -1],
+        "x_position" : [25, 75],
+        "y_position" : [25, 75],
+        "step" : 0.05,
+        "iterations" : [3, 5]
+    },
+    "white_grid":
+    {
+        "_comment" : "White grid animation settings",
+        "cell_number" : [10, 20],
+        "stroke_thickness" : [7, 15],
+        "step" : 0.3,
+        "iterations" : [1, 1]
+    },
+    "black_grid":
+    {
+        "_comment" : "Black grid animation settings",
+        "cell_number" : [10, 20],
+        "stroke_thickness" : [10, 20],
+        "step" : 0.3,
+        "iterations" : [1, 1]
+    }
+}

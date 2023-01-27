@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %}Generate GIF{% endblock %} {% block
+content %}
+<div class="row justify-content-center">
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <!-- Form with radio for text input or image input, text input, load image, fps input, duration input and validation button -->
+    <div class="card my-5 mx-2">
+      <div class="card-body">
+        <h1 class="card-title">Generate GIF</h1>
+        <form
+          action="{{ url_for('generate') }}"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <label for="image-file">Image :</label>
+          <input
+            type="file"
+            name="image"
+            id="image-file"
+            accept="image/*"
+            required
+          />
+          <br />
+          <label for="json-file">Fichier JSON :</label>
+          <input
+            type="file"
+            name="json_file"
+            id="json-file"
+            accept="application/json"
+            required
+          />
+          <br /><br />
+          <input type="submit" value="Envoyer" />
+        </form>
+        <img id="gif" src="data:image/gif;base64,{{ gif_data_base64 }}" />
+      </div>
+    </div>
+  </div>
+</div>
+
+  {% endblock %}
+</div>
