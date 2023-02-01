@@ -24,6 +24,7 @@ import random
 import os
 from lib.Gif import Gif
 import time
+# from flask_socketio import SocketIO, emit
 
 # launch server : flask --app app --debug run
 
@@ -133,8 +134,13 @@ def calculate_image_data():
     pass
 
 
-if __name__ == '__main__':
-    thread = Thread(target=calculate_image_data)
-    thread.start()
+@app.before_first_request
+def activate_job():
+    global thread
+    if thread is None:
+        thread = Thread(target=calculate_image_data)
+        thread.start()
 
+
+if __name__ == '__main__':
     app.run(debug=False)
